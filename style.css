@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&family=Roboto:wght@100;300;400;500;700;900&family=Rubik+Vinyl&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+#logo {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-top: 100px;
+}
+
+h1 {
+    color: rgb(209, 190, 127);
+    font-family: "Rubik Vinyl", serif;
+    text-align: center;
+}
+
+#name {
+    color: red;
+    font-size: 40px;
+}
+
+#va {
+    color: rgb(207, 144, 167);
+    font-size: 40px;
+}
+
+#voice {
+    width: 200px;
+    display: none;
+}
+
+button img {
+    width: 20px;
+}
+
+#btn {
+    width: 50%;
+    height: auto;
+    background: linear-gradient(to right, red, rgb(85, 255, 0));
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    border-radius: 20px;
+    color: white;
+    box-shadow: 2px 2px 10px green, 2px 2px 10px rgb(189, 39, 13);
+    border: none;
+    transition: all 0.5s;
+    cursor: pointer;
+    gap: 10px;
+}
+#content{
+    color: white;
+}
+
+#btn:hover {
+    box-shadow: 2px 2px 20px green, 2px 2px 20px rgb(189, 39, 13);
+    letter-spacing: 1px;
+}
+.imagesiri {
+    display: block;
+    margin: 50px auto;
+    width: 300px; /* Adjust size as needed */
+    height: auto;
+    animation: rotateBackAndForth 1s ease-in-out alternate;
+}
+
+@keyframes rotateBackAndForth {
+    0% {
+        transform: rotate(-90deg);
+    }
+    100% {
+        transform: rotate(90deg);
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+    body {
+        background:white;
+    }
+
+    #btn {
+        background: linear-gradient(to right, rgb(55, 0, 255), rgb(255, 0, 38));
+    }
+
+    #text {
+        text-align: center;
+    }
+
+    #logo {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+    }
+}
